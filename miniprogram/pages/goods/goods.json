@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "二手商品列表",
+  "usingComponents": {
+    "van-card": "../../vant/card/index",
+    "van-tag": "../../vant/tag/index",
+    "van-button": "../../vant/button/index"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/publish/publish",
+    "pages/user/user",
+    "pages/edit/edit",
+    "pages/help/help",
+    "pages/about/about",
+    "pages/login/login",
+    "pages/service/service",
+    "pages/goods/goods",
+    "pages/books/books",
+    "pages/info/info",
+    "pages/scan/scan",
+    "pages/publi/publi"
+        
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0fb7e0",
+    "navigationBarTitleText": "武院二手交易",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index_0.png",
+      "selectedIconPath": "images/index_1.png"
+    },{
+      "pagePath": "pages/publish/publish",
+      "text": "发布",
+      "iconPath": "images/publish_0.png",
+      "selectedIconPath": "images/publish_1.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "images/user_0.png",
+      "selectedIconPath": "images/user_1.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,13 @@
+      <view class="a_contain">
+            <view class="a_inp shadow">
+                  <image class="a_scan" src="/images/scan.png"></image>
+                  <input bindconfirm="confirm" bindinput="isbnInput" value="{{isbn}}" type="number" maxlength="13" placeholder-class="a_pla" placeholder="请输入书本的ISBN号码" />
+                  <view class="a_confirm" bindtap="confirm">确认</view>
+            </view>
+            <image class="a_isbn" src="/images/isbn.png" />
+            <view class="a_des">您还可以直接通过摄像头扫描出ISBN码</view>
+            <image class="a_next" src="/images/next.png" />
+      </view>
+      <view class="a_sao">
+            <button class="shadow" bindtap="scan">点击扫码</button>
+      </view>

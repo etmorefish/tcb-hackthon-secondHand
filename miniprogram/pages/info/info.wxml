@@ -1,0 +1,26 @@
+
+<view class="page__bd">
+    <view class="weui-article">
+        <view class="weui-article__h1">商品：{{item.title}}</view>
+        <view class="weui-article__h2">分类：{{item.g_type}}</view>
+
+        <view class="weui-article__section">
+            <view class="weui-article__section">
+                <view class="weui-article__p">
+                <!-- <view wx:for={{item.pic_url}}> -->
+                  <view wx:for="{{ item.pic_url }}" wx:for-index="idx" wx:for-item="pic">
+                <image class="weui-article__img" src="{{pic}}" mode="widthFix" style="width:100%" />
+                </view>
+                    
+                 </view>
+                 <view class="weui-article__p">                      
+                      <!-- {{body}}                 -->
+                     描述信息： <rich-text nodes="{{item.description}}"></rich-text>
+                </view>
+                <view class="weui-article__p">
+                       发布时间：{{item.pub_time}} <!-- 知乎链接：{{share_url}} -->
+                </view>
+            </view> 
+        </view>     
+    </view>   
+</view>

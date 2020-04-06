@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "信息发布",
+  "usingComponents": {
+    "van-button": "../../vant/button/index"
+  }
+}

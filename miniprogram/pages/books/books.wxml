@@ -1,0 +1,21 @@
+<view wx:for="{{booklist}}">
+  <van-card
+    title="{{ item.title }}"
+    desc="{{item.abstract}}  / 发布时间 {{item.publish_date}} "
+    thumb="{{ item.cover_url }}"
+    
+  >
+
+  <view slot="tags">
+    <view wx:for="{{ item.labels }}" wx:for-index="idx" wx:for-item="tag">
+   <view wx:if="{{ idx < 2 }}"> <van-tag type="primary">{{ tag }}</van-tag> </view>
+    </view>
+  </view>
+    <view>发布时间：{{ item.create_time }}</view>
+
+    <view slot="footer">
+    <van-button  data-id="{{ item._id }}" size="small" type="primary"  plain bind:click="viewItem">联系他(她)</van-button>
+  </view>
+</van-card>
+</view>
+

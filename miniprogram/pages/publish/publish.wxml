@@ -1,0 +1,24 @@
+<!--pages/publish/publish.wxml-->
+<!-- <van-button type="primary" size="large" bind:click="sh_goods">发布二手物品信息</van-button>
+<van-button type="primary" size="large" bind:click="sh_book">发布二手书籍信息</van-button>
+<van-button type="primary" size="large" bind:click="sh_info">发布失物招领信息</van-button> -->
+<view class="wrapper">
+	<view bindtap="sh_goods" class="old" data-type="0">
+		<text>发布二手物品信息</text>
+		<view class="s_mask0"></view>
+	</view>
+
+
+	<view bindtap="sh_book" class="old" data-type="0">
+		<text>发布二手书籍信息</text>
+		<view class="s_mask1"></view>
+	</view>
+
+
+	<view bindtap="sh_info" class="old" data-type="0">
+		<text>发布二手资料信息</text>
+		<view class="s_mask2"></view>
+	</view>
+
+	<van-dialog id="van-dialog" />
+</view>
