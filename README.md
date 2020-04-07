@@ -12,8 +12,6 @@
 
 ![微信图片_20200406224942.jpg](http://ww1.sinaimg.cn/large/005W6BOngy1gdkfu4gc53j30u01s6dh6.jpg)
 
-
-
 ![微信图片_20200406225020.jpg](http://ww1.sinaimg.cn/large/005W6BOngy1gdkfuqg59mj30u01s6gmu.jpg)
 
 ![微信图片_20200406225111.jpg](http://ww1.sinaimg.cn/large/005W6BOngy1gdkfvgyqdoj30u01s6wfu.jpg)
@@ -40,7 +38,7 @@
 3. 修改部分配置信息
 
    	"appid": "你自己的appid",
-   	    env: '你自己的云环境id',
+      	    env: '你自己的云环境id',
 
 4. 进去云函数目录 安装所需要的模块 终端输入npm install
 
