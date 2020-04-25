@@ -15,10 +15,10 @@
 	</view>
 
 
-	<view bindtap="sh_info" class="old" data-type="0">
+	<!-- <view bindtap="sh_info" class="old" data-type="0">
 		<text>发布二手资料信息</text>
 		<view class="s_mask2"></view>
-	</view>
+	</view> -->
 
 	<van-dialog id="van-dialog" />
 </view>

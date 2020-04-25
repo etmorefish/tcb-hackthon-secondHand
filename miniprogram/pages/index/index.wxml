@@ -1,9 +1,11 @@
-<view class="top_box">
-      <view class="search_box" bindtap="search">
-            <image class="search_ico" src="/images/search.png"></image>
-            <view class="search_text">搜索想要物品，例如：考研资料</view>
-      </view>
-</view>
+
+<van-search
+  value="{{ value }}"
+  shape="round"
+  background="#0fb7e0"
+  placeholder="搜索想要物品，例如：考研资料"
+/>
+
 
    <swiper
         class="home-swiper"
@@ -26,11 +28,15 @@
             </view>
             <view class="classify">
                 <view bindtap="toClassifyList"  wx:for="{{list}}"  class="classify-item">
-                <text>{{item}}</text>
+                <text class="items">{{item}}</text>
                 </view>
             </view>
     </view>
-
+                  <view class="h-tag">
+      
+            </view>
+        <!-- 信息列表 -->
+        <view class="main-msg">
     <!-- 导航 -->
                 <view class="tab">
                 <view bindtap="changeChoice" data-tag="1" class='{{choose ? "tab-item item-border" : "tab-item"}}'>
@@ -40,9 +46,12 @@
                     <text class='{{choose ? "tit" : "tit-b"}}'>二手书籍</text>
                 </view>
             </view>
+                     <!-- 列表 -->
         <view class="msg-list">
+
                         <!-- 二手商品列表 -->
-                        <view wx:for="{{items}}">
+                        <!-- 二手商品列表 -->
+ <view wx:for="{{items}}">
   <van-card
     title="{{ item.title }}"
     tag="{{item.g_type}}"
@@ -57,7 +66,28 @@
   </view>
 </van-card>
 </view>
+<!--shu-->
+<view wx:if="{{choose == 0}}" bindtap="tapToLostDetail" data-id="{{item._id}}" class="msg-item" wx:key="{{item._id}}" wx:for="{{booklist}}">
+  <van-card
+    title="{{ item.title }}"
+    desc="{{item.abstract}}  / 发布时间 {{item.publish_date}} "
+    thumb="{{ item.cover_url }}"
+    
+  >
+
+  <view slot="tags">
+    <view wx:for="{{ item.labels }}" wx:for-index="idx" wx:for-item="tag">
+   <view wx:if="{{ idx < 2 }}"> <van-tag type="primary">{{ tag }}</van-tag> </view>
+    </view>
+  </view>
+    <view>发布时间：{{ item.create_time }}</view>
+
+    <view slot="footer">
+    <van-button  data-id="{{ item._id }}" size="small" type="primary"  plain bind:click="viewItem">联系他(她)</van-button>
+  </view>
+</van-card>
+</view>
 
         </view>
-  
+  </view>
   </view>

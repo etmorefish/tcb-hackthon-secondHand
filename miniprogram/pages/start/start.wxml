@@ -18,7 +18,9 @@
       <input type="number" bindinput="passwd" value="" maxlength="20" placeholder-class="passwd" placeholder="输入您的密码" />
     </view>
     <!-- </view> -->
-  <button bindtap="start">验证登录</button>
+  <button bindtap="start" >验证登录</button>
+  <van-button type="primary" size="large" >由于此功能模块还未编写，目前不涉及账号密码，可直接点击验证登录进入小程序</van-button>
+
 
   </view>
 </view>

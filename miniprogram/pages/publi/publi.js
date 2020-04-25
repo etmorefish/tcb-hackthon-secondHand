@@ -241,12 +241,10 @@ console.log(params)
     // }
 
     //判断商品类型是否为空
-    let msg = '**'
+    let msg = 'error'
     if (pub_type === 0) {
       msg = '请选择商品类型';
-    } else if (pub_type === 1) {
-      msg = '请选择书籍类型';
-    }
+    } 
     if (!g_type) {
       wx.showToast({
         title: msg,

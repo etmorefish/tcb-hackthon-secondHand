@@ -37,7 +37,7 @@
 
 
 .hot{
-	height: 240rpx;
+	height: 120rpx;
 	padding: 20rpx;
 }
 .h-tag{
@@ -64,8 +64,13 @@
 }
 .classify-item{
 	display: flex;
+
 	flex-direction: column;
 	align-items: center;
+}
+.slide-image{
+  align-items:center;
+  width: 100%;
 }
 
 .tab{

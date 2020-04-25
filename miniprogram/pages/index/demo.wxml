@@ -1,0 +1,16 @@
+                        <!-- 二手商品列表 -->
+ <view wx:for="{{items}}">
+  <van-card
+    title="{{ item.title }}"
+    tag="{{item.g_type}}"
+    price="{{item.price}}"
+    origin-price="{{item.price}}"
+    desc="{{item.description}}  / 发布时间 {{item.pub_time}} "
+    thumb="{{ item.pic_url[0] }}"
+  >
+    <view slot="footer">
+    <van-button  data-id="{{ item._id }}" size="small" type="primary"  plain bind:click="viewItems">详细</van-button>
+    <van-button  data-id="{{ item._id }}" size="small" type="primary"  plain bind:click="viewItem">联系他(她)</van-button>
+  </view>
+</van-card>
+</view>
